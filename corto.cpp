@@ -44,23 +44,23 @@ int main(void){
       }
 case 2:
  cout<<"Para Mujer (descuento del 20%):";
- cout<<"1. Blusa Moderna: $80 ().";
- cout<<"2. Falda Elegante: $110 (descuento del 20%)."; 
- cout<<"3. Abrigo Premium: $250 (descuento del 20%)";
+ cout<<"1. Blusa Moderna: $80 (64).";
+ cout<<"2. Falda Elegante: $110 (88)."; 
+ cout<<"3. Abrigo Premium: $250 (200)";
      cout<<"seleccione la prenda que quiere comprar";
     cin>>numero;
       switch(numero){
         case 1:
-      bille=bille-63;
+      bille=bille-64;
        cout<<"Su compra se ha realizado de forma exitosa su saldo es de: " <<bille;   
 
      break;
       case 2:
-     bille=bille-91;
+     bille=bille-88;
      cout<<"Su compra se ha realizado de forma exitosa su saldo es de: " <<bille;   
      break; 
      case 3:
-         bille=bille-630;
+         bille=bille-200;
        cout<< "su compra se ha realizado de forma exitosa su saldo es de:"<<bille;
 
        break;
@@ -77,8 +77,41 @@ case 2:
  cout<<"4. Blusa Moderna: $80 (descuento del 20%).";
  cout<<"5. Falda Elegante: $110 (descuento del 20%)."; 
  cout<<"6. Abrigo Premium: $250 (descuento del 20%)";
+  cout<<"seleccione la prenda que quiere comprar.\n";
+  cin>>numero;
+ switch(numero){
+        case 1:
+      bille=bille-63;
+       cout<<"Su compra se ha realizado de forma exitosa su saldo es de: " <<bille;   
+
+     break;
+      case 2:
+     bille=bille-91;
+     cout<<"Su compra se ha realizado de forma exitosa su saldo es de: " <<bille;   
+     break; 
+     case 3:
+         bille=bille-630;
+       cout<< "su compra se ha realizado de forma exitosa su saldo es de:"<<bille;
+    
+       break;
+               case 4:
+      bille=bille-64;
+       cout<<"Su compra se ha realizado de forma exitosa su saldo es de: " <<bille;   
+
+     break;
+      case 5:
+     bille=bille-88;
+     cout<<"Su compra se ha realizado de forma exitosa su saldo es de: " <<bille;   
+     break; 
+     case 6:
+         bille=bille-200;
+       cout<< "su compra se ha realizado de forma exitosa su saldo es de:"<<bille;
+
+       break;
+      }
     break;
  }
+
 
     
     return 0;

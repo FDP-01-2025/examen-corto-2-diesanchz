@@ -15,7 +15,7 @@ int main(void){
      cout<<"su talla recomendada es 16";
      else if(edad>=61)
      cout<<"su talla recomendada es 18";
- cout<<"digite su genero masculino=1, femenino=2 y mostrar todo=9";
+ cout<<"digite su genero masculino=1, femenino=2 y mostrar todo=9.\n";
  cin>>genero;
  switch (genero)
  {
@@ -38,7 +38,10 @@ int main(void){
      break; 
      case 3:
          bille=bille-630;
-       cout<< "su compra se ha realizado de forma exitosa su saldo es de:"<<bille;
+         if (bille<0){
+             cout<<"su saldo es insuficiente para la compra de esta prenda.";
+         }
+       
 
        break;
       }
@@ -91,7 +94,9 @@ case 2:
      break; 
      case 3:
          bille=bille-630;
-       cout<< "su compra se ha realizado de forma exitosa su saldo es de:"<<bille;
+                bille=bille-630;
+         if (bille<0){
+             cout<<"su saldo es insuficiente para la compra de esta prenda.";
     
        break;
                case 4:
@@ -110,9 +115,10 @@ case 2:
        break;
       }
     break;
- }
+  }
 
 
     
     return 0;
+}
 }
